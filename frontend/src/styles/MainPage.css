@@ -1,0 +1,47 @@
+.main-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.main-page h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* 그리드 레이아웃 */
+.grid-container {
+  display: grid;
+  /* 카드 최소 너비 300px, 남는 공간은 자동 분배 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* 각 카드가 정사각형이 되도록 aspect-ratio 사용 */
+.grid-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  /* 정사각형 유지 (현대 브라우저 지원) */
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:hover {
+  transform: scale(1.02);
+}
+
+.grid-item h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
