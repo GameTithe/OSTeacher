@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 최상위 컨테이너: 양쪽 페이지 모두 100vh로 배경 꽉 채움 */
+.auth {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 배경 이미지: 로그인, 회원가입 모두 동일 */
+.auth__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-3581.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: 0;
+}
+
+/* 폼 컨테이너: 공통 스타일 */
+.auth__forms {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  color: #fff;
+}
+
+.auth__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth__box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.auth__icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.auth__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  color: #fff;
+}
+
+/* 링크 및 텍스트 */
+.auth__forgot,
+.auth__account,
+.auth__signin,
+.auth__signup {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* 버튼 스타일: 통일 */
+.auth__button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.auth__button:hover {
+  background-color: #45a049;
+}
