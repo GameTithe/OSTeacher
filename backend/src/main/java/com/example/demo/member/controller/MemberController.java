@@ -24,7 +24,7 @@ public class MemberController {
         }
     }
 
-    // (옵션) 로그인 API 예시
+    // 로그인 API
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody MemberDTO memberDTO) {
         // memberService.login(memberDTO) 같은 로그인 처리 로직을 추가하면 됨.

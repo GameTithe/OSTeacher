@@ -1,4 +1,3 @@
-// frontend/src/pages/MainPage.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/MainPage.css';
@@ -14,6 +13,18 @@ function MainPage() {
 
   return (
     <div className="main-page">
+      <div className="top-bar">
+        <div className="top-left">
+          <button onClick={() => navigate('/main')}>홈</button>
+        </div>
+        <div className="top-center">
+          <input type="text" placeholder="검색어를 입력하세요" />
+          <button>검색</button>
+        </div>
+        <div className="top-right">
+          <button onClick={() => navigate('/login')}>로그인 / 회원가입</button>
+        </div>
+      </div>
       <h2>프로젝트 구인</h2>
       <div className="grid-container">
         {posts.map((post) => (

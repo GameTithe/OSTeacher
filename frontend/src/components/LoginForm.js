@@ -18,7 +18,7 @@ function LoginForm({ onLoginSuccess }) {
   const handleSubmit = async (e) => {
     e.preventDefault(); // 기본 폼 동작 막기 (페이지 새로고침 방지)
     try {
-      // 백엔드 API 호출 (예: /api/members/login)
+      // 백엔드 API 호출 (/api/members/login)
       const res = await fetch('http://localhost:8080/api/members/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
