@@ -66,16 +66,12 @@ return (
           </div>
           <a className="auth__forgot">비밀번호를 잊으셨나요?</a>
           <button type="submit" className="auth__button">로그인</button>
-          <div>
-            <span className="auth__account">계정이 없으신가요?</span>
-            <button
-              type="button"
-              className="auth__signin"
-              onClick={() => navigate('/join')}
-            >
-              회원가입
-            </button>
-          </div>
+          <span
+            className="auth__account"
+            onClick={() => navigate('/join')}
+          >
+            계정이 없으신가요?
+          </span>
         </form>
       </div>
     </div>
