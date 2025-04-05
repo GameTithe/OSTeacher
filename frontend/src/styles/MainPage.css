@@ -17,7 +17,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem; /* Updated margin-top for consistent spacing */
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
 .top-left,

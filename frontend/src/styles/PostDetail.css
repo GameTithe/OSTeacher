@@ -13,20 +13,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .top-left,
 .top-right {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .top-left {
-  text-align: left;
+  justify-content: flex-start;
 }
 
 .top-right {
-  text-align: right;
+  justify-content: flex-end;
 }
 
 .top-bar button {
